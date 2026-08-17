@@ -1,0 +1,12 @@
+{
+  "assets": [
+    {
+      "path": "/models/hand_landmarker.task",
+      "bytes": 7819105
+    },
+    {
+      "path": "/wasm/vision_wasm_internal.wasm",
+      "bytes": 11756954
+    }
+  ]
+}
