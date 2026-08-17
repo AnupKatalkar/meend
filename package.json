@@ -1,0 +1,36 @@
+{
+  "name": "meend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Browser-only musical instrument played with hand gestures in front of a webcam.",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "vendor": "node scripts/vendor-mediapipe.mjs",
+    "postinstall": "node scripts/vendor-mediapipe.mjs",
+    "test:e2e": "node e2e/run.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tone": "^15.1.22",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.0.5",
+    "puppeteer-core": "^24.0.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10"
+  }
+}

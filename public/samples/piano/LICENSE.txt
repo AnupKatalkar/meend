@@ -1,0 +1,9 @@
+Salamander Grand Piano
+Copyright Alexander Holm.
+Licensed under Creative Commons Attribution 3.0 (CC-BY 3.0):
+  https://creativecommons.org/licenses/by/3.0/
+
+Samples obtained via the Tone.js sample set at
+  https://tonejs.github.io/audio/salamander/
+
+Attribution is also shown in the app's help panel.

@@ -1,0 +1,25 @@
+# Dependencies and build output
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Vendored at install time by `npm run vendor` — about 22 MB of MediaPipe wasm,
+# the hand landmark model and the piano samples. Regenerated on demand, so
+# committing them would bloat the repo permanently for no benefit.
+public/wasm/
+public/models/
+public/samples/
+public/asset-manifest.json
+
+# Scratch and local overrides
+_to_delete/
+shots/
+*.local
+.env
+.env.*
+!.env.example
+
+# Editor and OS
+.DS_Store
+.idea/
+*.swp

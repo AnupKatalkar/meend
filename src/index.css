@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #05060a;
+  --color-ink-soft: #0b0e17;
+  --color-panel: #111524;
+  --color-edge: #232941;
+  --color-neon: #4de3ff;
+  --color-neon-warm: #ff5ec8;
+  --color-text: #e8ecf8;
+  --color-muted: #99a1bd;
+
+  --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+/* A visible focus ring everywhere: every control has to be reachable and
+   obvious by keyboard alone. */
+:focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Range inputs get almost no styling from Tailwind; make them legible. */
+input[type="range"] {
+  accent-color: var(--color-neon);
+  width: 100%;
+}
+
+.gs-panel-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-edge) transparent;
+}
